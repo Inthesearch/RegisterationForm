@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.irobot.registerationform.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:text="Kindly Enter your details..."
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:gravity="center_vertical"
+
+        android:paddingLeft="15dp"/>
+    4
+    <EditText
+        android:id="@+id/username"
+        android:layout_height="34dp"
+        android:layout_width="match_parent"
+        android:hint="   Username"
+        android:textColorHint="@color/hintColor"
+
+        android:drawableLeft="@drawable/username"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"></EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:hint="   Choose your password"
+        android:textColorHint="@color/hintColor"
+        android:background="@color/white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/password"/>
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:hint="   Confirm password"
+        android:textColorHint="@color/hintColor"
+        android:drawableLeft="@drawable/password"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:hint="   Email"
+        android:textColorHint="@color/hintColor"
+        android:drawableLeft="@drawable/mail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+        
+        <EditText
+
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:hint="   First name"
+            android:textColorHint="@color/hintColor"/>
+
+        <EditText
+            android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@color/white"
+        android:layout_weight="1"
+
+            android:hint="   Last name"
+            android:textColorHint="@color/hintColor"
+            android:layout_marginLeft="2dp"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        ></Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <CheckBox
+            android:id="@+id/terms"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+
+
+            />
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="I agree with terms and conditions."
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        android:layout_marginTop="8dp"
+        >
+
+        <CheckBox
+            android:id="@+id/news"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tvNews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="I want to receive the news and offers."
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Sign up"
+        android:textColor="@color/hintColor"
+        android:background="@color/white"
+        android:onClick="clickhandler"/>
+
+
+
+
+</LinearLayout>
+</ScrollView>
